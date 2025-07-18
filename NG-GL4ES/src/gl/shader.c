@@ -134,14 +134,14 @@ void APIENTRY_GL4ES gl4es_glCompileShader(GLuint shader) {
             LOAD_GLES2(glGetShaderInfoLog);
             GLint status = 0;
             gles_glGetShaderiv(glshader->id, GL_COMPILE_STATUS, &status);
-            if(status!=GL_TRUE) {
-                SHUT_LOGD("LIBGL: Error while compiling shader %d. Original source is:\n%s\n=======\n", glshader->id, glshader->source);
-                SHUT_LOGD("ShaderConv Source is:\n%s\n=======\n", glshader->converted);
-                char tmp[500];
-                GLint length;
-                gles_glGetShaderInfoLog(glshader->id, 500, &length, tmp);
-                SHUT_LOGD("Compiler message is\n%s\nLIBGL: End of Error log\n", tmp);
-            }
+//            if(status!=GL_TRUE) {
+//                SHUT_LOGD("LIBGL: Error while compiling shader %d. Original source is:\n%s\n=======\n", glshader->id, glshader->source);
+//                SHUT_LOGD("ShaderConv Source is:\n%s\n=======\n", glshader->converted);
+//                char tmp[500];
+//                GLint length;
+//                gles_glGetShaderInfoLog(glshader->id, 500, &length, tmp);
+//                SHUT_LOGD("Compiler message is\n%s\nLIBGL: End of Error log\n", tmp);
+//            }
         }
     } else
         noerrorShim();
