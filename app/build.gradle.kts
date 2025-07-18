@@ -7,7 +7,6 @@ android {
     namespace = "com.fcl.plugin.mobileglues"
     compileSdk = 35
 
-    ndkVersion = "27.1.12297006"
 
     defaultConfig {
         applicationId = "com.fcl.plugin.kryptonwrapper"
